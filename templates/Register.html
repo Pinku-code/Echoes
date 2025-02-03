@@ -17,8 +17,6 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            
-            
             <li class="nav-item">
               <a class="nav-link text-light" href="{{ url_for('Login') }}">Login</a>
             </li>
@@ -32,35 +30,35 @@
     </nav>
     <!-- Navbar End -->
     <!-- Content -->
-<div class="bg-light d-flex align-items-center justify-content-center p-5">
-    <div class="card shadow-lg w-100" style="max-width: 480px;">
-      <div class="card-body">
-        <div class="text-center">
-          <h1 class="card-title h3">Sign Up</h1>
-          <p class="card-text text-muted">Sign up below to create your account</p>
-        </div>
-        <div class="mt-4">
-          <form action="">
-            <div class="mb-4">
-              <label for="email" class="form-label text-muted">Email Address</label>
-              <input type="email" class="form-control" id="email" placeholder="Email Address" required />
-            </div>
-            <div class="mb-4">
-              <label for="password" class="form-label text-muted">Password</label>
-              <input type="password" class="form-control" id="password" placeholder="Password" required />
-            </div>
-            <div class="d-grid">
-              <button type="submit" class="btn btn-lg" style="background-color: rgb(4, 28, 66); color: white;">Sign up</button>
-            </div>
-            <p class="text-center text-muted mt-4">
-              Already have an account?
-              <a href="{{url_for("Login")}}" class="text-decoration-none">Sign in</a>.
-            </p>
-          </form>
+    <div class="bg-light d-flex align-items-center justify-content-center p-5">
+      <div class="card shadow-lg w-100" style="max-width: 480px;">
+        <div class="card-body">
+          <div class="text-center">
+            <h1 class="card-title h3">Sign Up</h1>
+            <p class="card-text text-muted">Sign up below to create your account</p>
+          </div>
+          <div class="mt-4">
+            <form action="">
+              <div class="mb-4">
+                <label for="email" class="form-label text-muted">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Email Address" required />
+              </div>
+              <div class="mb-4">
+                <label for="password" class="form-label text-muted">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password" required />
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-lg" style="background-color: rgb(4, 28, 66); color: white;">Sign up</button>
+              </div>
+              <p class="text-center text-muted mt-4">
+                Already have an account?
+                <a href="{{ url_for('Login') }}" class="text-decoration-none">Sign in</a>.
+              </p>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-</div>
 
     <!-- content end -->
 
