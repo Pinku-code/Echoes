@@ -12,5 +12,17 @@ def Home():
 def Contact():
     return render_template('Contact.html')
 
+@app.route("/blogs")
+def Blog():
+    return render_template('Blog.html')
+
+@app.route("/login")
+def Login():
+    return render_template('Login.html')
+
+@app.route("/register")
+def Register():
+    return render_template('Register.html')
+
 if __name__ == "__main__" :
     app.run(debug=True)
